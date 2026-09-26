@@ -70,6 +70,7 @@
 				</div>
 			</section>
 
+
 			<section id="station" class="fuel-section container" aria-labelledby="fuel-title">
 				<div class="fuel-section__hero">
 					<div>
@@ -85,7 +86,7 @@
 					<article class="fuel-card"><span class="fuel-card__number">03</span><span class="fuel-card__icon" aria-hidden="true">Gùë</span><h3>LPG</h3><p>Convenient and efficient cooking gas for homes and businesses.</p></article>
 					<article class="fuel-card"><span class="fuel-card__number">04</span><span class="fuel-card__icon" aria-hidden="true">GÜÖ</span><h3>Lubricants</h3><p>Quality engine oils and lubricants designed to keep your machines running smoothly.</p></article>
 				</div>
-				<div class="fuel-section__footer"><p><strong>Fuel up. Power up. Keep moving.</strong></p><div class="fuel-section__actions"><a class="button button--primary button--pill" href="#menu">Explore Our Products <span aria-hidden="true">GåÆ</span></a><button class="button button--outline button--pill" type="button" data-action="contact">Contact Sazy Station <span aria-hidden="true">Gåù</span></button></div></div>
+				<div class="fuel-section__footer"><p><strong>Fuel up. Power up. Keep moving.</strong></p><div class="fuel-section__actions"><a class="button button--primary button--pill" href="#menu">Explore Our Products <span aria-hidden="true">GåÆ</span></a><a class="button button--outline button--pill" href="./contact.html">Contact Sazy Station <span aria-hidden="true">Gåù</span></a></div></div>
 			</section>
 
 			<section id="deals" class="deals-section container" aria-labelledby="deals-title">
@@ -223,7 +224,7 @@
 		</main>
 
 		<footer class="site-footer">
-			<div class="site-footer__inner container"><div class="site-footer__copy"><p class="site-footer__eyebrow">SAZY STATION</p><h2>Powering Every Journey.</h2><p>Sazy Station delivers quality fuel, LPG and lubricants for drivers, homes and businesses.</p><div class="site-footer__actions"><a class="button button--primary button--pill" href="#station">Find a Station <span aria-hidden="true">Gåù</span></a><button class="button button--outline button--pill" type="button" data-action="contact">Contact Us <span aria-hidden="true">Gåù</span></button></div></div><div class="site-footer__mark" aria-hidden="true"><span>SAZY</span><b>&amp;</b><strong>CREAM2GO</strong><small>FUEL GÇó FOOD GÇó EVERYDAY ESSENTIALS</small></div></div>
+			<div class="site-footer__inner container"><div class="site-footer__copy"><p class="site-footer__eyebrow">SAZY STATION</p><h2>Powering Every Journey.</h2><p>Sazy Station delivers quality fuel, LPG and lubricants for drivers, homes and businesses.</p><div class="site-footer__actions"><a class="button button--primary button--pill" href="#station">Find a Station <span aria-hidden="true">Gåù</span></a><a class="button button--outline button--pill" href="./contact.html">Contact Us <span aria-hidden="true">Gåù</span></a></div></div><div class="site-footer__mark" aria-hidden="true"><span>SAZY</span><b>&amp;</b><strong>CREAM2GO</strong><small>FUEL GÇó FOOD GÇó EVERYDAY ESSENTIALS</small></div></div>
 			<div class="site-footer__bottom container"><p>&copy; <span data-current-year>2026</span> Sazy Station &amp; Cream2Go. All rights reserved.</p><span>Fast. Fresh. Reliable.</span></div>
 		</footer>
 		<div class="cart-backdrop" data-cart-close></div>
@@ -232,6 +233,20 @@
 			<div class="cart-panel__items" data-cart-items><p class="cart-panel__empty">Your cart is empty.</p></div>
 			<div class="cart-panel__footer"><div><span>Total</span><strong data-cart-total>$0.00</strong></div><button class="button button--primary button--pill" type="button" data-action="checkout">Checkout</button></div>
 		</aside>
+		<div class="checkout-backdrop" data-checkout-close></div>
+		<section class="checkout-panel" aria-labelledby="checkout-title" aria-hidden="true" data-checkout-panel>
+			<div class="cart-panel__header"><h2 id="checkout-title">Complete your order</h2><button class="cart-panel__close" type="button" aria-label="Close checkout" data-checkout-close>+ù</button></div>
+			<form class="checkout-form" data-checkout-form>
+				<label for="checkout-name">Full name</label><input id="checkout-name" name="name" required autocomplete="name">
+				<label for="checkout-email">Email address</label><input id="checkout-email" name="email" type="email" required autocomplete="email">
+				<label for="checkout-phone">Phone number</label><input id="checkout-phone" name="phone" type="tel" required autocomplete="tel">
+				<label for="checkout-address">Delivery address</label><textarea id="checkout-address" name="address" rows="3" required autocomplete="street-address"></textarea>
+				<label for="checkout-payment">Payment method</label><select id="checkout-payment" name="payment"><option>Cash on delivery</option><option>Card on delivery</option><option>Station pickup</option></select>
+				<p class="checkout-form__total">Order total <strong data-checkout-total>$0.00</strong></p>
+				<button class="button button--primary button--pill" type="submit">Place order</button>
+				<p class="checkout-form__message" data-checkout-message role="status"></p>
+			</form>
+		</section>
 		<div class="toast" role="status" aria-live="polite" data-toast></div>
 	</div>
 </body>

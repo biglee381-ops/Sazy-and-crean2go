@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Sign in to your Cream2Go account.">
+	<meta name="theme-color" content="#121316">
+	<title>Sign In | Cream2Go</title>
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="CSS/auth.css">
+	<script src="Javascript/auth.js" defer></script>
+</head>
+<body class="auth-page">
+	<main class="auth-layout">
+		<a class="auth-back" href="/" aria-label="Back to Cream2Go home">&larr; <span>Storefront</span></a>
+		<section class="auth-card" aria-labelledby="auth-title">
+			<a class="auth-brand" href="/" aria-label="Cream2Go home">
+				<img src="assets/BG_Removed_20260923_102618.png" alt="Cream2Go">
+			</a>
+			<p class="auth-eyebrow">TEAM ACCESS</p>
+			<h1 id="auth-title">Welcome back.</h1>
+			<p class="auth-intro">Sign in to continue to your store workspace.</p>
+			<form class="auth-form" data-login-form>
+				<label for="login-username">Username</label>
+				<input id="login-username" name="username" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" required minlength="3" maxlength="32" autofocus>
+				<label for="login-password">Password</label>
+				<div class="auth-password-field">
+					<input id="login-password" name="password" type="password" autocomplete="current-password" required>
+					<button class="auth-password-toggle" type="button" aria-label="Show password" data-password-toggle>Show</button>
+				</div>
+				<p class="auth-message" data-login-message role="status" aria-live="polite"></p>
+				<button class="auth-submit" type="submit"><span>Sign in</span><span aria-hidden="true">&rarr;</span></button>
+			</form>
+			<p class="auth-footnote">Authorized staff only. Contact the store administrator if you need access.</p>
+		</section>
+		<footer class="auth-footer">CREAM2GO <span>·</span> STAFF PORTAL</footer>
+	</main>
+</body>
+</html>

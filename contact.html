@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Contact Sazy Station and Cream2Go for orders, station services, and business enquiries.">
+	<meta name="theme-color" content="#121316">
+	<title>Contact Us | Sazy Station &amp; Cream2Go</title>
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="CSS/contact.css">
+	<script src="Javascript/contact.js" defer></script>
+</head>
+<body class="contact-page">
+	<a class="skip-link" href="#main-content">Skip to content</a>
+	<div class="app-shell">
+		<header class="navbar">
+			<div class="container navbar__inner">
+				<a class="brand" href="./index.html" aria-label="Sazy and Cream2Go home">
+					<img class="brand__sazy-logo" src="assets/BG_Removed_20260923_102336.png" alt="Sazy">
+					<span class="brand__amp" aria-hidden="true">&amp;</span>
+					<img class="brand__cream-logo" src="assets/BG_Removed_20260923_102618.png" alt="Cream2Go">
+				</a>
+				<nav class="contact-nav" aria-label="Main navigation">
+					<a href="./index.html#menu">Menu</a>
+					<a href="./index.html#track">Track an order</a>
+					<a href="./index.html#station">Sazy Station</a>
+				</nav>
+				<a class="button button--signin contact-signin" href="./login.html">Staff sign in</a>
+			</div>
+		</header>
+
+		<main id="main-content" class="contact-main">
+			<section class="contact-intro container" aria-labelledby="contact-title">
+				<div>
+					<p class="contact-eyebrow">SAZY STATION <span aria-hidden="true">/</span> CREAM2GO</p>
+					<h1 id="contact-title">Let’s get<br><span>in touch.</span></h1>
+					<p class="contact-lead">Questions about an order, our station services, or a business enquiry? Send us a note and we’ll help point you in the right direction.</p>
+				</div>
+				<div class="contact-hours">
+					<span class="contact-hours__mark" aria-hidden="true">24</span>
+					<div><strong>Here when you need us</strong><span>Sazy Station is open 24 hours a day.</span></div>
+				</div>
+			</section>
+
+			<section class="contact-workspace container" aria-label="Contact options">
+				<div class="contact-options">
+					<p class="contact-section-label">HOW CAN WE HELP?</p>
+					<a class="contact-option" href="./index.html#track">
+						<span class="contact-option__number">01</span>
+						<span><strong>Order support</strong><small>Check your order status or find your order number.</small></span>
+						<span class="contact-option__arrow" aria-hidden="true">&rarr;</span>
+					</a>
+					<a class="contact-option" href="./index.html#menu">
+						<span class="contact-option__number">02</span>
+						<span><strong>Cream2Go menu</strong><small>Explore treats, add-ons, and group-order options.</small></span>
+						<span class="contact-option__arrow" aria-hidden="true">&rarr;</span>
+					</a>
+					<a class="contact-option" href="./index.html#station">
+						<span class="contact-option__number">03</span>
+						<span><strong>Station services</strong><small>Browse fuel, LPG, and lubricant services.</small></span>
+						<span class="contact-option__arrow" aria-hidden="true">&rarr;</span>
+					</a>
+					<div class="contact-note"><span aria-hidden="true">i</span><p>For the quickest order update, include your order number in your message.</p></div>
+				</div>
+
+				<div class="contact-form-panel">
+					<div class="contact-form-heading">
+						<p class="contact-section-label">SEND A MESSAGE</p>
+						<h2>What’s on your mind?</h2>
+					</div>
+					<form class="contact-form" data-contact-form>
+						<div class="contact-form__row">
+							<label for="contact-name">Your name<input id="contact-name" name="name" type="text" autocomplete="name" required maxlength="100"></label>
+							<label for="contact-email">Email address<input id="contact-email" name="email" type="email" autocomplete="email" required maxlength="254"></label>
+						</div>
+						<label for="contact-topic">What is this about?
+							<select id="contact-topic" name="topic" required>
+								<option value="" disabled selected>Select a topic</option>
+								<option>Order support</option>
+								<option>Cream2Go products</option>
+								<option>Sazy Station services</option>
+								<option>Business enquiry</option>
+								<option>Something else</option>
+							</select>
+						</label>
+						<label for="contact-order">Order number <span>(optional)</span><input id="contact-order" name="order" type="text" placeholder="e.g. C2G123456" maxlength="32"></label>
+						<label for="contact-message">Your message<textarea id="contact-message" name="message" rows="5" required minlength="10" maxlength="2000" placeholder="Tell us a little more..."></textarea></label>
+						<p class="contact-form__status" data-contact-status role="status" aria-live="polite"></p>
+						<button class="button button--primary button--pill contact-submit" type="submit">Prepare email <span aria-hidden="true">&rarr;</span></button>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="contact-footer container">
+			<a href="./index.html">&larr; Back to Sazy &amp; Cream2Go</a>
+			<span>FUEL <b>·</b> FOOD <b>·</b> EVERYDAY ESSENTIALS</span>
+		</footer>
+	</div>
+</body>
+</html>

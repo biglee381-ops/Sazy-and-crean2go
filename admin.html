@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Fast, fresh Cream2Go desserts and Sazy Station convenience, delivered with delight.">
+	<title>Cream2Go | Admin Dashboard</title>
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="CSS/auth.css">
+	<script src="Javascript/auth.js" defer></script>
+	<script src="Javascript/main.js" defer></script>
+</head>
+<body>
+	<a class="skip-link" href="#main-content">Skip to content</a>
+	<div class="app-shell">
+		<header class="navbar">
+			<div class="container navbar__inner">
+				<a class="brand" href="./index.html" aria-label="Sazy and Cream2Go home">
+					<img class="brand__sazy-logo" src="assets/BG_Removed_20260923_102336.png" alt="Sazy">
+					<span class="brand__amp" aria-hidden="true"></span>
+					<img class="brand__cream-logo" src="assets/BG_Removed_20260923_102618.png" alt="Cream2Go">
+				</a>
+				<nav id="primary-navigation" class="navbar__nav" aria-label="Primary navigation">
+					<ul class="navbar__links">
+						<li><a class="navbar__link" href="./index.html#home"><span aria-hidden="true">Gîé</span><span>Home</span></a></li>
+						<li><a class="navbar__link" href="./index.html#about"><span aria-hidden="true">Gôÿ</span><span>About</span></a></li>
+						<li><a class="navbar__link" href="./index.html#menu"><span aria-hidden="true">=ƒìª</span><span>Cream2Go</span></a></li>
+						<li><a class="navbar__link" href="./index.html#station"><span aria-hidden="true">G¢+</span><span>Sazy Station</span></a></li>
+						<li><a class="navbar__link" href="./index.html#track"><span aria-hidden="true">=ƒÜÜ</span><span>Track Order</span></a></li>
+						<li><a class="navbar__link is-active" href="./admin.html" aria-current="page"><span aria-hidden="true">=ƒÅ+</span><span>Admin</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main id="main-content" class="main-content">
+			<section id="admin" class="admin-section container" aria-labelledby="admin-title">
+				<div class="admin-shell" aria-label="Admin dashboard preview">
+					<aside class="admin-sidebar">
+						<div class="admin-brand">
+							<img class="admin-brand__logo" src="assets/BG_Removed_20260923_102618.png" alt="Cream2Go">
+							<div>
+								<strong>CREAM2GO</strong>
+								<small>ADMIN DASHBOARD</small>
+							</div>
+						</div>
+						<div class="admin-search">
+							<label class="sr-only" for="admin-search">Search dashboard</label>
+							<input id="admin-search" type="search" placeholder="Search" />
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.9 12.8l4.7 4.7 1.4-1.4-4.7-4.7A7.5 7.5 0 1010.5 3zm0 2a5.5 5.5 0 110 11 5.5 5.5 0 010-11z"/></svg>
+						</div>
+						<nav class="admin-nav" aria-label="Admin navigation">
+							<button class="admin-nav__item is-active" type="button">
+								<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5v7.5a1 1 0 01-1 1h-5v-7H9v7H4a1 1 0 01-1-1v-7.5z"/></svg>
+								<span>Dashboard</span>
+							</button>
+							<button class="admin-nav__item" type="button">
+								<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5A2.5 2.5 0 016.5 5h11A2.5 2.5 0 0120 7.5v9A2.5 2.5 0 0117.5 19h-11A2.5 2.5 0 014 16.5v-9zm2 0v9h12v-9H6zm2 2h8v2H8v-2zm0 4h5v2H8v-2z"/></svg>
+								<span>Orders</span>
+							</button>
+							<button class="admin-nav__item" type="button">
+								<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8a2 2 0 012-2h3l2-2h3l2 2h3a2 2 0 012 2v8a2 2 0 01-2 2H6a2 2 0 01-2-2V8zm8 2a4 4 0 100 8 4 4 0 000-8zm0 2a2 2 0 110 4 2 2 0 010-4z"/></svg>
+								<span>Inventory</span>
+							</button>
+							<button class="admin-nav__item" type="button">
+								<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11a4 4 0 100-8 4 4 0 000 8zm-8 1a3 3 0 100-6 3 3 0 000 6zm0 2c-2.8 0-5 2.2-5 5v1h10v-1c0-2.8-2.2-5-5-5zm8 0c1.8 0 3.4 1 4.4 2.6l1.1 1.8H23v1h-4.5l-1.2-2.1A6.3 6.3 0 0016 14z"/></svg>
+								<span>Customers</span>
+							</button>
+							<button class="admin-nav__item" type="button">
+								<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 18h14v2H5v-2zm0-1.5L10 11l3 3 5-8 3 2-7 11-3-3-6 6z"/></svg>
+								<span>Deliveries</span>
+							</button>
+							<button class="admin-nav__item" type="button">
+								<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18h16v2H4v-2zm2-2h3v-7H6v7zm5 0h3V6h-3v10zm5 0h3V9h-3v7z"/></svg>
+								<span>Marketing</span>
+							</button>
+							<button class="admin-nav__item" type="button">
+								<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8v2h2a2 2 0 012 2v2h-2v-2H8v2H6V7a2 2 0 012-2h2V3zm-2 7h12v9a2 2 0 01-2 2H8a2 2 0 01-2-2v-9zm4 2v5h4v-5h-4z"/></svg>
+								<span>Reports</span>
+							</button>
+							<button class="admin-nav__item" type="button">
+								<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.1 12.9a7.5 7.5 0 00-.1-1.1l2-1.6-2-3.4-2.4 1a7.3 7.3 0 00-1.8-1.1L14.2 3h-4.4l-.7 2.7a7.3 7.3 0 00-1.8 1.1l-2.4-1-2 3.4 2 1.6a7.5 7.5 0 00-.1 1.1c0 .4.1.7.1 1.1l-2 1.6 2 3.4 2.4-1a7.3 7.3 0 001.8 1.1l.7 2.7h4.4l.7-2.7a7.3 7.3 0 001.8-1.1l2.4 1 2-3.4-2-1.6c0-.4.1-.7.1-1.1zM12 15a3 3 0 110-6 3 3 0 010 6z"/></svg>
+								<span>Settings</span>
+							</button>
+						</nav>
+					</aside>
+
+					<div class="admin-panel">
+						<header class="admin-header">
+							<div class="admin-header__title">
+								<h2 id="admin-title">CREAM2GO ADMIN</h2>
+								<p data-admin-date>Live sales overview</p>
+							</div>
+							<div class="admin-profile">
+								<div class="admin-profile__badge">🔔</div>
+								<div class="admin-profile__meta">
+									<div class="admin-profile__avatar">A</div>
+									<div>
+										<strong>Admin:</strong>
+										<span>Store owner</span>
+									</div>
+								</div>
+								<button class="admin-profile__search" type="button" aria-label="Search dashboard">
+									<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.9 12.8l4.7 4.7 1.4-1.4-4.7-4.7A7.5 7.5 0 1010.5 3zm0 2a5.5 5.5 0 110 11 5.5 5.5 0 010-11z"/></svg>
+								</button>
+								<button class="auth-logout" type="button" data-logout>Sign out</button>
+							</div>
+						</header>
+
+						<div class="admin-stats">
+							<div class="admin-stat admin-stat--primary">
+								<p>Total Orders Today</p>
+								<div class="admin-stat__line">
+									<strong data-admin-orders>0</strong>
+									<span class="trend trend--up">Live</span>
+								</div>
+							</div>
+							<div class="admin-stat admin-stat--success">
+								<p>Revenue</p>
+								<div class="admin-stat__line">
+									<strong data-admin-revenue>$0.00</strong>
+									<span class="trend trend--up">Live</span>
+								</div>
+							</div>
+							<div class="admin-stat admin-stat--warning">
+								<p>Active Deliveries</p>
+								<div class="admin-stat__line">
+									<strong data-admin-active>0</strong>
+									<span class="trend trend--up">Live</span>
+								</div>
+							</div>
+							<div class="admin-stat admin-stat--danger">
+								<p>Pending Orders</p>
+								<div class="admin-stat__line">
+									<strong data-admin-pending>0</strong>
+									<span class="trend trend--neutral">Live</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="admin-grid">
+							<div class="panel chart-panel">
+								<div class="panel__header">
+									<h3>Sales This Week</h3>
+									<span>Oct 20 - 26</span>
+								</div>
+								<div class="chart" data-admin-chart aria-label="Sales chart"></div>
+								<div class="chart-labels" data-admin-chart-labels></div>
+							</div>
+
+							<div class="panel products-panel">
+								<div class="panel__header">
+									<h3>Top Products</h3>
+									<span data-admin-products-label>Live</span>
+								</div>
+								<ul class="product-list" data-admin-products></ul>
+							</div>
+
+							<div class="panel orders-panel">
+								<div class="panel__header">
+									<h3>Recent Orders</h3>
+										<span data-admin-orders-label>Today</span>
+								</div>
+								<table>
+									<thead>
+										<tr><th>Order ID</th><th>Customer</th><th>Items</th><th>Status</th><th>Total</th><th>Time</th></tr>
+									</thead>
+									<tbody data-admin-orders-table></tbody>
+								</table>
+							</div>
+
+							<div class="panel feedback-panel">
+								<div class="panel__header">
+									<h3>Customer Feedback</h3>
+									<span>Recent</span>
+								</div>
+								<div class="feedback-card">
+									<div class="feedback-card__top">
+										<strong>Great taste!</strong>
+										<span>★★★★★</span>
+									</div>
+									<p>Fresh ingredients, fast delivery, and the pizza was perfect. Will order again.</p>
+								</div>
+							</div>
+						</div>
+
+						<section class="panel cashier-panel" aria-labelledby="cashier-title">
+							<div class="panel__header">
+								<h3 id="cashier-title">Cashier Accounts</h3>
+								<span data-cashier-count>0 accounts</span>
+							</div>
+							<div class="cashier-manager">
+								<form class="cashier-form" data-cashier-form>
+									<label>Full name<input name="name" type="text" autocomplete="name" required maxlength="80"></label>
+									<label>Username<input name="username" type="text" autocomplete="username" required minlength="3" maxlength="32" pattern="[A-Za-z0-9._\-]+" title="Use letters, numbers, periods, underscores, or hyphens."></label>
+									<label>Password<input name="password" type="password" autocomplete="new-password" required minlength="12" maxlength="128"></label>
+									<button class="cashier-submit" type="submit">Create cashier account</button>
+								</form>
+								<div class="cashier-list-wrap">
+									<p class="cashier-list__label">Current cashiers</p>
+									<ul class="cashier-list" data-cashier-list></ul>
+								</div>
+							</div>
+							<p class="cashier-message" data-cashier-message role="status" aria-live="polite"></p>
+							<p class="cashier-notice">Passwords are securely hashed and cannot be viewed after an account is created. Share each temporary password with its cashier through a private channel.</p>
+						</section>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+</body>
+</html>
