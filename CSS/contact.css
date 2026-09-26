@@ -313,6 +313,10 @@
 }
 
 @media (max-width: 760px) {
+	.contact-main {
+		padding-block: 2.5rem 3rem;
+	}
+
 	.contact-nav {
 		gap: 0.75rem;
 		font-size: 0.68rem;
@@ -330,6 +334,17 @@
 		grid-template-columns: 1fr;
 		gap: 2rem;
 	}
+
+	.contact-form input,
+	.contact-form select,
+	.contact-form textarea {
+		min-height: 2.9rem;
+		font-size: 1rem;
+	}
+
+	.contact-form textarea {
+		min-height: 8rem;
+	}
 }
 
 @media (max-width: 560px) {
@@ -342,6 +357,12 @@
 		width: 100%;
 		justify-content: space-between;
 		padding-top: 0.65rem;
+	}
+
+	.contact-nav a {
+		display: inline-flex;
+		min-height: 2.75rem;
+		align-items: center;
 	}
 
 	.contact-signin {

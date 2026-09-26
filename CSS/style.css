@@ -1126,10 +1126,34 @@ ol {
 	.admin-shell {
 		grid-template-columns: 1fr;
 	}
+	.navbar__link,
+	.navbar__toggle,
+	.navbar__actions .button--signin,
+	.navbar__actions .cart-button,
+	.button--add,
+	.filter-button,
+	.deal-card__cta {
+		min-height: 2.75rem;
+	}
+
+	.navbar__toggle,
+	.navbar__actions .cart-button {
+		min-width: 2.75rem;
+	}
+
+	.order-tracker__input-wrap input,
+	.checkout-form input,
+	.checkout-form textarea,
+	.checkout-form select {
+		font-size: 1rem;
+	}
 
 	.admin-sidebar {
 		border-right: 0;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+	.admin-page .orders-panel table {
+		min-width: 0;
+	}
 	}
 
 	.admin-stats {
@@ -1610,12 +1634,14 @@ ol {
 /* Reference hero composition overrides */
 .main-content {
 	display: grid;
+	grid-template-columns: minmax(0, 1fr);
 	gap: clamp(1.2rem, 2vw, 2.5rem);
 	padding-block: 0.35rem 1rem;
 }
 
 main > section,
 .site-footer {
+	min-width: 0;
 	opacity: 0;
 	transform: translateY(18px);
 	animation: section-reveal 700ms cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
@@ -2003,4 +2029,312 @@ article,
 	.station-hero__delivery,
 	.station-hero__pickup,
 	.station-hero__badge { animation: none; }
+}
+
+@media (max-width: 980px) {
+	.fuel-section__products,
+	.deal-grid,
+	.essentials-grid,
+	.journey-section__features {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.deals-section__heading,
+	.essentials-section__heading {
+		align-items: flex-start;
+	}
+
+	.orders-panel {
+		min-width: 0;
+		overflow-x: auto;
+	}
+
+	.orders-panel table {
+		min-width: 40rem;
+	}
+}
+
+@media (max-width: 760px) {
+	.container {
+		width: min(100% - 2rem, var(--content-width));
+	}
+
+	.admin-page .navbar__inner {
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.admin-page .navbar__nav {
+		display: block;
+		order: 3;
+		width: 100%;
+	}
+
+	.admin-page .navbar__links {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 0.2rem;
+		padding-top: 0.35rem;
+	}
+
+	.admin-page .navbar__links li {
+		min-width: 0;
+		border-top: 1px solid var(--border-subtle);
+	}
+
+	.admin-page .navbar__link {
+		display: grid;
+		min-width: 0;
+		justify-items: center;
+		gap: 0.25rem;
+		padding: 0.6rem 0.2rem;
+		font-size: 0.64rem;
+		text-align: center;
+	}
+
+	.admin-page .admin-nav {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.admin-page .admin-header,
+	.admin-page .admin-profile {
+		width: 100%;
+	}
+
+	.admin-page .admin-profile {
+		flex-wrap: wrap;
+	}
+
+	.admin-page .admin-profile__meta {
+		flex: 1 1 auto;
+	}
+
+	.station-hero,
+	.fuel-section,
+	.deals-section,
+	.about-section,
+	.journey-section,
+	.essentials-section {
+		min-width: 0;
+	}
+
+	.fuel-section__footer {
+		gap: 0.75rem;
+	}
+
+	.fuel-section__actions {
+		width: 100%;
+	}
+
+	.fuel-section__actions .button {
+		flex: 1 1 10rem;
+		min-height: 2.75rem;
+	}
+
+	.order-tracker__status {
+		min-width: 0;
+		padding: 0.8rem;
+	}
+
+	.order-tracker__status-head {
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.contact-form-panel,
+	.contact-options {
+		min-width: 0;
+	}
+
+	.cart-panel {
+		height: 100dvh;
+	}
+
+	.checkout-panel {
+		max-height: calc(100dvh - 1.5rem);
+	}
+
+	.toast {
+		right: max(0.75rem, env(safe-area-inset-right));
+		bottom: max(0.75rem, env(safe-area-inset-bottom));
+		left: max(0.75rem, env(safe-area-inset-left));
+		width: auto;
+		max-width: none;
+	}
+}
+
+@media (max-width: 560px) {
+	.top-ticker {
+		font-size: 0.67rem;
+	}
+
+	.admin-page .admin-section {
+		width: calc(100% - 1rem);
+		padding: 0.5rem;
+		border-radius: 0.65rem;
+	}
+
+	.admin-page .admin-shell {
+		gap: 0;
+		border-radius: 0.5rem;
+	}
+
+	.admin-page .admin-sidebar {
+		gap: 0.65rem;
+		padding: 0.8rem 0.65rem;
+	}
+
+	.admin-page .admin-search input {
+		min-height: 2.75rem;
+	}
+
+	.admin-page .admin-panel {
+		min-width: 0;
+		padding: 0.65rem;
+	}
+
+	.admin-page .admin-stats {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.45rem;
+	}
+
+	.admin-page .admin-stat {
+		min-width: 0;
+		padding: 0.7rem;
+	}
+
+	.admin-page .admin-grid {
+		gap: 0.65rem;
+	}
+
+	.admin-page .panel {
+		min-width: 0;
+		padding: 0.7rem;
+		border-radius: 0.55rem;
+	}
+
+	.admin-page .cashier-form {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.admin-page .cashier-form label,
+	.admin-page .cashier-submit {
+		grid-column: 1;
+	}
+
+	.admin-page .orders-panel tr {
+		margin-bottom: 0.6rem;
+		padding: 0.45rem;
+		background: rgba(255, 255, 255, 0.025);
+		border: 1px solid rgba(255, 255, 255, 0.07);
+		border-radius: 0.4rem;
+	}
+
+	.admin-page .orders-panel td {
+		display: grid;
+		grid-template-columns: 5.5rem minmax(0, 1fr);
+		gap: 0.4rem;
+		overflow-wrap: anywhere;
+		font-size: 0.68rem;
+	}
+
+	.admin-page .orders-panel td::before {
+		min-width: 0;
+		font-size: 0.52rem;
+	}
+
+	.station-hero {
+		padding-inline: 0.8rem;
+	}
+
+	.station-hero__actions .button {
+		flex: 1 1 9rem;
+		min-height: 2.75rem;
+	}
+
+	.station-hero__metrics {
+		gap: 0.65rem;
+	}
+
+	.station-metric {
+		min-width: 5.25rem;
+	}
+
+	.fuel-section,
+	.deals-section,
+	.about-section,
+	.journey-section,
+	.essentials-section {
+		padding: 1rem;
+	}
+
+	.fuel-section__products,
+	.deal-grid,
+	.essentials-grid,
+	.journey-section__features {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.fuel-card,
+	.essential-card {
+		min-width: 0;
+		padding: 0.7rem;
+	}
+
+	.deal-card__body {
+		padding: 0.65rem;
+	}
+
+	.deal-card__meta {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.deal-card__body > p {
+		min-height: 0;
+	}
+
+	.order-timeline {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		row-gap: 0.85rem;
+	}
+
+	.order-timeline li::after {
+		display: none;
+	}
+
+	.order-timeline li small {
+		display: block;
+	}
+
+	.site-footer__actions .button {
+		min-height: 2.75rem;
+	}
+}
+
+@media (max-width: 380px) {
+	.admin-page .navbar__links {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.admin-page .admin-nav {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.admin-page .admin-stats {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.deal-grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.product-grid--slider .product-card {
+		flex-basis: min(82vw, 15rem);
+	}
+
+	.contact-nav {
+		gap: 0.55rem;
+		font-size: 0.63rem;
+	}
 }
